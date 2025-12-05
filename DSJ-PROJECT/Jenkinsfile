@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDS = credentials('dockerhub-token')
+        DOCKERHUB_CREDS = credentials('docker-hub-token')
         SONARQUBE = 'sonar-local'
         IMAGE = "ranjitha001/my-ci-app"
     }

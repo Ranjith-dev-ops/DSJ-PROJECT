@@ -19,10 +19,11 @@ pipeline {
             steps {
                 bat """
                 echo Running tests...
-                bash test.sh
+                "C:\\Program Files\\Git\\bin\\bash.exe" test.sh
                 """
             }
         }
+
 
         stage('SonarQube Scan') {
             steps {
